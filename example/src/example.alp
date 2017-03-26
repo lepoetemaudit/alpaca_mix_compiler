@@ -1,0 +1,13 @@
+module example
+
+export add
+export round_trip
+
+-- Simple add function
+let add x y = x + y
+
+-- Call elixir - round trip
+let round_trip () =
+  beam :"Elixir.IO" :puts ["Hello Elixir! Love, Alpaca"] with
+    :ok -> :ok
+
