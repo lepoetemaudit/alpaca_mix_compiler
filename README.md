@@ -1,24 +1,18 @@
-# AlpacaCompiler
+# Alpaca Mix Compiler
 
-**TODO: Add description**
+A mix compiler you can add to your project in order to compile Alpaca
+source files.
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
+Add the following to your Mix dependencies:
 
-  1. Add `alpaca_compiler` to your list of dependencies in `mix.exs`:
+```elixir
+{:alpaca_lib, git: "https://github.com/lepoetemaudit/alpaca_mix_compiler", branch: "master"}
+```
 
-    ```elixir
-    def deps do
-      [{:alpaca_compiler, "~> 0.1.0"}]
-    end
-    ```
+Ensure it is added as a compiler in your project definition:
 
-  2. Ensure `alpaca_compiler` is started before your application:
-
-    ```elixir
-    def application do
-      [applications: [:alpaca_compiler]]
-    end
-    ```
-
+```elixir
+compilers: Mix.compilers ++ [:alpaca],
+```
