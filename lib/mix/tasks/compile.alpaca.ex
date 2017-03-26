@@ -55,5 +55,6 @@ defmodule Mix.Tasks.Compile.Alpaca do
   Cleans up compilation artifacts.
   """
   def clean do
+    # TODO
   end
 end
