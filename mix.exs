@@ -27,7 +27,6 @@ defmodule AlpacaCompiler.Mixfile do
   #
   # Type "mix help deps" for more examples and options
   defp deps do
-    [{:alpaca_lib, git: "https://github.com/alpaca-lang/alpaca_lib", branch: "master"},
-     {:alpaca, git: "https://github.com/alpaca-lang/alpaca", branch: "master", manager: :rebar3, override: true}]
+    [{:alpaca, git: "https://github.com/alpaca-lang/alpaca", branch: "master", manager: :rebar3, override: true}]
   end
 end
