@@ -8,8 +8,6 @@ let add x y = x + y
 
 -- Call elixir - round trip
 let round_trip () =
-  -- waiting for a PR to be merged for quoted Atoms :)
-  :ok
-  --beam :"Elixir.IO" :puts ["Hello Elixir! Love, Alpaca"] with
-  --:ok -> :ok
+  beam :"Elixir.IO" :puts ["Hello Elixir! Love, Alpaca"] with
+    :ok -> :ok
 
